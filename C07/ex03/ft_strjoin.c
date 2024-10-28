@@ -6,7 +6,7 @@
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/26 16:56:33 by iarslan           #+#    #+#             */
-/*   Updated: 2024/08/27 13:55:30 by iarslan          ###   ########.fr       */
+/*   Updated: 2024/09/04 16:21:59 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,4 +85,10 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	final = (char *)malloc(x * sizeof(char));
 	final = ft_allstring(size, strs, sep, final);
 	return (final);
+}
+int main()
+{
+	char *y[3] = {"merhaba", "nasılsın","ramo"};
+	char *x = ft_strjoin(3,y,"aaaaa");
+	printf("%s",x);
 }
